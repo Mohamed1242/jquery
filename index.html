@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        nav{
+            background-color: black;
+            height: 7vh;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+            position: fixed;
+            width: 100%;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        div{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div:nth-child(odd){
+            background-color: brown;
+        }
+        div:nth-child(even){
+            background-color: rgb(193, 128, 128);
+        }
+        .active{
+            background-color: white;
+            padding: 7px;
+            color: black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a class="active" href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#product">product</a>
+        <a href="#contact">contact</a>
+    </nav>
+<div id="home"><h1>Home</h1></div>
+<div id="about"><h1>About</h1></div>
+<div id="product"><h1>Product</h1></div>
+<div id="contact"><h1>Contact</h1></div>
+
+<script src="../jquery-3.7.1.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
